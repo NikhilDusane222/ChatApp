@@ -1,9 +1,6 @@
 pipeline {
     agent any
-      options {
-            buildDiscarder(logRotator(numToKeepStr: '7'))
-              
-   stages {    
+     stages {
      stage('Deploy') { 
            steps {
              sh ''' #! /bin/bash 
@@ -12,22 +9,20 @@ pipeline {
              '''
             }
         }
-        
+         
      stage('status'){
             steps {
             sh ''' #! /bin/bash
             echo Deployment started
             '''
             }  
-        }
+        }  
         
     }
-}
     post { 
         always { 
             echo 'Stage is success'
         }
     }
-
-}    
     
+}
