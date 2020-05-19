@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /home/ubuntu
-rm -rf /ChatApplicationProject1/
+sudo rm -rf /ChatApp/
