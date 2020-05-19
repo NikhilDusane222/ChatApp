@@ -7,6 +7,6 @@ server {
   }
   location / {
       include proxy_params;
-      proxy_pass http://unix:/ChatApp/fundoo/fundoo.sock;
+      proxy_pass http://unix:/home/ubuntu/ChatApp/fundoo/fundoo.sock;
   }
 }
