@@ -1,0 +1,2 @@
+#!/bin/basystemctl restart gunicorn
+sudo systemctl restart nginx

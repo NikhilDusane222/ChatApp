@@ -1,6 +1,5 @@
 import os
 
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -17,15 +16,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Email verification
 EMAIL_USE_TLS = True            # Email Tools true
 EMAIL_HOST = 'smtp.gmail.com'   # SMTP protocol for mail transfer
-EMAIL_HOST_USER = 'abc@gmail.com'   # email to be send from user
-EMAIL_HOST_PASSWORD = 'jskdnsndask'                   # password
+EMAIL_HOST_USER = 'dusanenikhil222@gmail.com'   # email to be send from user
+EMAIL_HOST_PASSWORD = '95rajkunj@222'                   # password
 EMAIL_PORT = 587                                       # default email port
 DEFAULT_FROM_EMAIL = 'TestSite Team <noreply@example.com>'  # subject for email
-
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
@@ -103,13 +100,14 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'dbuser@db1237',
-        'PASSWORD': '1qazXSW@#EDC',
-        'HOST': 'db1237.postgres.database.azure.com',
+        'NAME': 'ChatApplicationDatabase',
+        'USER': 'postgres',
+        'PASSWORD': 'admin123',
+        'HOST': 'chatapplicationdatabase.cerbbz1qfmik.ap-south-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
+
 #sagar kadam
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

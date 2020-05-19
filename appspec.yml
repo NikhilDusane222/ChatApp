@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /ChatApplicationProject1
+
+hooks:
+  BeforeInstall:
+    - location: Scripts/BeforeInstall.sh
+      timeout: 300
+      runas: ubuntu
+  AfterInstall:
+    - location: Scripts/installScripts.sh
+      timeout: 300
+      runas: ubuntu
+  ApplicationStart:
+    - location: Scripts/startApplication.sh
+      timeout: 300
+      runas: ubuntu

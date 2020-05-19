@@ -38,7 +38,7 @@ def Signup(request):
             # current_site = get_current_site(request)
             message = render_to_string('acc_email.html', {
                 'user': user,
-                'domain':'http://13.232.251.134/',
+                'domain':'http://3.7.95.233',
                 # 'domain': current_site.domain,
                 'uid': urlsafe_base64_encode(force_bytes(user.pk)).decode(),  # because django 2.0.0
                 'token': account_activation_token.make_token(user),
