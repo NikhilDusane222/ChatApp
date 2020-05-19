@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /ChatApplicationProject1
+    destination: /ChatApp
 
 hooks:
   BeforeInstall:
