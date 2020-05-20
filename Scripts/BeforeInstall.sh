@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -rf /ChatApplicationProject1/
+sudo rm -rf /ChatApplicationProject1/
