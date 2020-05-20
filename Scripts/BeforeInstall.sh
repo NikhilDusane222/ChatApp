@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -rf /ChatApp/
+rm -rf /ChatApplicationProject1/
